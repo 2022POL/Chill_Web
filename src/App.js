@@ -5,6 +5,7 @@ import Ai from './Pages/Ai';
 import Coloring from './Pages/Coloring';
 import ColorPallet from './Pages/ColorPallet';
 import Pallet_complete from './Pages/Pallet_complete';
+import Ai_complete from './Pages/Ai_complete';
 
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -20,7 +21,9 @@ function App() {
                 <Route path="/ai" element={<Ai />} />
                 <Route path="/coloring" element={<Coloring />} />  
                 <Route path="/colorPallet" element={<ColorPallet />} />
-                <Route path="/Pallet_complete" element={<Pallet_complete />} />    
+                <Route path="/Pallet_complete" element={<Pallet_complete />} /> 
+                <Route path="/Ai_complete" element={<Ai_complete />} /> 
+
     
               </Routes>
             </div>
