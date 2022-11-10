@@ -16,7 +16,7 @@ const ColorPallet = () => {
             <Image/>
             <Link to = {"/coloring"}>
                 <MyButton
-                    text={"START"}
+                    text={"CHOOSE_SKETCH"}
                 />
             </Link>
         </Wrapper>

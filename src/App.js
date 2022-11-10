@@ -4,6 +4,7 @@ import Home from './Pages/Home';
 import Ai from './Pages/Ai';
 import Coloring from './Pages/Coloring';
 import ColorPallet from './Pages/ColorPallet';
+import Pallet_complete from './Pages/Pallet_complete';
 
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -18,7 +19,9 @@ function App() {
                 <Route path="/" element={<Home />} /> { /* path가 index이면 Home component를 렌더링해라*/  }
                 <Route path="/ai" element={<Ai />} />
                 <Route path="/coloring" element={<Coloring />} />  
-                <Route path="/colorPallet" element={<ColorPallet />} />    
+                <Route path="/colorPallet" element={<ColorPallet />} />
+                <Route path="/Pallet_complete" element={<Pallet_complete />} />    
+    
               </Routes>
             </div>
         </BrowserRouter>
