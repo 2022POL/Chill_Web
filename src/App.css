@@ -19,6 +19,15 @@ main {
   height: 150px;
 }
 
+.c_completed{
+  width: 50%;
+  height: 50%;
+}
+
+.ai_completed {
+  width: 50%;
+  height: 50%;
+}
 
 /*
 main{

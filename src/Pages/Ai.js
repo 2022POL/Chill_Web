@@ -2,18 +2,23 @@ import styled from "styled-components";
 import React from "react";
 
 import MyButton from './../Components/button';
-
 import Image from "./../Components/Image";
+import Upload_ment from "./../Components/upload_ment";
+import { Link } from "react-router-dom";
 
 const Ai = () => {
 
     return (
         <Wrapper>
-            <h4>색칠할 스케치를 업로드해주세요</h4>
+            <Upload_ment></Upload_ment>
             <Image/>
-            <MyButton 
-                text={'Download'} 
-            />  
+
+
+            <Link to = {"/Ai_complete"}>
+                <MyButton
+                    text={"START"}
+                />
+            </Link>  
         </Wrapper>
     );
 };
