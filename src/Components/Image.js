@@ -1,8 +1,7 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
-function Image() {
-  const [imageSrc, setImageSrc] = useState('');
+function Image({imageSrc, setImageSrc}) {
 
   const encodeFileToBase64 = (fileBlob) => {
     const reader = new FileReader();

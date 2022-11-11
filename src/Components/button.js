@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import styled from 'styled-components';
 
-const MyButton = ({text, type, onClick}) => {
+const MyButton = ({text, type, onClick, disabled}) => {
 
     const btnType = ['positive','negative'].includes(type)? type:'default'; // type이 있다면 type으로 아니라면 default로 강제 type설정
 
@@ -9,6 +9,7 @@ const MyButton = ({text, type, onClick}) => {
         <StyledButton
             className={["MyButton", `MyButton_${btnType}`].join(" ")}
             onClick = {onClick}
+            disabled = {disabled}
         >
             {text}
         </StyledButton>
@@ -27,6 +28,10 @@ const StyledButton = styled.button`
     border-radius: 3px;
     background-color: #3f186e;
     border: 0;
+
+    :disabled {
+        background-color : #dadada;
+    }
 `
 
 export default MyButton
