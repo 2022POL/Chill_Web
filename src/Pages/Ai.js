@@ -12,22 +12,18 @@ const Ai = () => {
         <Wrapper>
             <Upload_ment></Upload_ment>
             <Image/>
-<<<<<<< HEAD
             <MyButton 
                 text={'START'} 
             />  
             <MyButton 
                 text={'Download'} 
             />  
-=======
-
-
-            <Link to = {"/Ai_complete"}>
+            {/* <Link to = {"/Ai_complete"}>
                 <MyButton
                     text={"START"}
                 />
-            </Link>  
->>>>>>> 15e067e474f812b447fe9c729f272cc8e045b745
+            </Link>   */}
+
         </Wrapper>
     );
 };

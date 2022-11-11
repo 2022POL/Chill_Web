@@ -27,12 +27,8 @@ const ColorPallet = () => {
             <Image imageSrc={imageSrc} setImageSrc={setImageSrc}/>
             <Link to = {"/coloring"}>
                 <MyButton
-<<<<<<< HEAD
-                    text={"NEXT"}
                     disabled={!(imageSrc.length > 0)}
-=======
                     text={"CHOOSE_SKETCH"}
->>>>>>> 15e067e474f812b447fe9c729f272cc8e045b745
                 />
             </Link>
         </Wrapper>
