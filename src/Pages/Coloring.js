@@ -2,7 +2,12 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import MyButton from './../Components/button';
 import Image from "./../Components/Image";
+<<<<<<< HEAD
   
+=======
+import Upload_ment from "./../Components/upload_ment";
+import { Link } from "react-router-dom";
+>>>>>>> 15e067e474f812b447fe9c729f272cc8e045b745
 
 const Coloring = () => {
     const [imageSrc, setImageSrc] = useState('');
@@ -16,12 +21,23 @@ const Coloring = () => {
 
     return (
         <Wrapper>
+<<<<<<< HEAD
             <h4>색칠할 스케치를 업로드해주세요</h4>
             <Image imageSrc={imageSrc} setImageSrc={setImageSrc}/>
             <MyButton text={'START'} onClick={download} disabled={!(imageSrc.length > 0)}/>
             <MyButton 
                 text={'Download'} 
             />  
+=======
+            <Upload_ment></Upload_ment>
+            <Image/>
+            <Link to = {"/Pallet_complete"}>
+                <MyButton
+                    text={"START"}
+                />
+            </Link>
+  
+>>>>>>> 15e067e474f812b447fe9c729f272cc8e045b745
             
         </Wrapper>
     );
