@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import React from "react";
+import React, { useState } from "react";
 
 import MyButton from './../Components/button';
 import Image from "./../Components/Image";
@@ -8,21 +8,18 @@ import { Link } from "react-router-dom";
 
 const Ai = () => {
 
+    const [imageSrc, setImageSrc] = useState('');
+
     return (
         <Wrapper>
             <Upload_ment></Upload_ment>
-            <Image/>
-            <MyButton 
-                text={'START'} 
-            />  
-            <MyButton 
-                text={'Download'} 
-            />  
-            {/* <Link to = {"/Ai_complete"}>
+            <Image imageSrc={imageSrc} setImageSrc={setImageSrc}/>
+
+            <Link to = {"/Ai_complete"}>
                 <MyButton
                     text={"START"}
                 />
-            </Link>   */}
+            </Link>  
 
         </Wrapper>
     );
