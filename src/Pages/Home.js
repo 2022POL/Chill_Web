@@ -12,7 +12,7 @@ const Home = () => {
                     text={"AI로 색칠하기"}
                 />
             </Link>
-            <Link to = {"/colorPallet"}>
+            <Link to = {"/colorPalette"}>
                 <MyButton
                     text={"직접 색칠하기"}
                 />

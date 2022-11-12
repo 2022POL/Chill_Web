@@ -3,8 +3,8 @@ import './App.css'
 import Home from './Pages/Home';
 import Ai from './Pages/Ai';
 import Coloring from './Pages/Coloring';
-import ColorPallet from './Pages/ColorPallet';
-import Pallet_complete from './Pages/Pallet_complete';
+import ColorPalette from './Pages/ColorPalette';
+import Palette_complete from './Pages/Palette_complete';
 import Ai_complete from './Pages/Ai_complete';
 
 
@@ -20,8 +20,8 @@ function App() {
                 <Route path="/" element={<Home />} /> { /* path가 index이면 Home component를 렌더링해라*/  }
                 <Route path="/ai" element={<Ai />} />
                 <Route path="/coloring" element={<Coloring />} />  
-                <Route path="/colorPallet" element={<ColorPallet />} />
-                <Route path="/Pallet_complete" element={<Pallet_complete />} /> 
+                <Route path="/colorPalette" element={<ColorPalette />} />
+                <Route path="/Palette_complete" element={<Palette_complete />} /> 
                 <Route path="/Ai_complete" element={<Ai_complete />} /> 
 
     

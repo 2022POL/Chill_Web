@@ -17,6 +17,7 @@ const Ai = () => {
 
             <Link to = {"/Ai_complete"}>
                 <MyButton
+                    disabled={!(imageSrc.length > 0)}
                     text={"START"}
                 />
             </Link>  
@@ -28,7 +29,8 @@ const Ai = () => {
 export default Ai;
 
 const Wrapper = styled.div`
-& > button {
+button {
     margin-top: 10px;
 }
+
 `

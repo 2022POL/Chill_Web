@@ -8,7 +8,7 @@ const Coloring = () => {
 
     const download = () => {
         const link = document.createElement("a");
-        link.download = "aaa.png";
+        link.download = "AI-Coloring.png";
         link.href = imageSrc;
         link.click();
     };
@@ -28,5 +28,8 @@ export default Coloring;
 const Wrapper = styled.div`
 & > button {
     margin-top: 10px;
+}
+img {
+      width: 300px;
 }
 `

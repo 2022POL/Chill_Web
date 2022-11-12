@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import MyButton from './../Components/button';
+import MyButton from '../Components/button';
 
 const Coloring = () => {
 
@@ -8,7 +8,7 @@ const Coloring = () => {
 
     const download = () => {
         const link = document.createElement("a");
-        link.download = "aaa.png";
+        link.download = "myColoring.png";
         link.href = imageSrc;
         link.click();
     };
@@ -27,5 +27,8 @@ export default Coloring;
 const Wrapper = styled.div`
 & > button {
     margin-top: 10px;
+}
+img {
+      width: 300px;
 }
 `

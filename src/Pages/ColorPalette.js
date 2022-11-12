@@ -3,26 +3,26 @@ import React, { useState }  from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import MyButton from '../Components/button';
-import Image from "./../Components/Image";
+import Image from "../Components/Image";
 
 import spring from "./../img/spring.png";
 import summer from "./../img/summer.png";
 import autum from "./../img/autum.png";
 import winter from "./../img/winter.png";
 
-const ColorPallet = () => {
+const ColorPalette = () => {
     const [imageSrc, setImageSrc] = useState('');
 
-    const palletSrc = (season) => {
+    const paletteSrc = (season) => {
         setImageSrc(season)
     }
 
     return (
         <Wrapper>
-            <img className="pallet" src={spring} onClick={()=>palletSrc(spring)}/>
-            <img className="pallet" src={summer} onClick={()=>palletSrc(summer)}/>
-            <img className="pallet" src={autum} onClick={()=>palletSrc(autum)}/>
-            <img className="pallet" src={winter} onClick={()=>palletSrc(winter)}/>
+            <img className="palette" src={spring} onClick={()=>paletteSrc(spring)}/>
+            <img className="palette" src={summer} onClick={()=>paletteSrc(summer)}/>
+            <img className="palette" src={autum} onClick={()=>paletteSrc(autum)}/>
+            <img className="palette" src={winter} onClick={()=>paletteSrc(winter)}/>
             <h4>팔레트를 선택하거나 업로드해주세요</h4>
             <Image imageSrc={imageSrc} setImageSrc={setImageSrc}/>
             <Link to = {"/coloring"}>
@@ -35,7 +35,7 @@ const ColorPallet = () => {
     );
 };
 
-export default ColorPallet;
+export default ColorPalette;
 
 const Wrapper = styled.div` 
     button {

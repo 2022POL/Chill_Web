@@ -11,8 +11,9 @@ const Coloring = () => {
         <Wrapper>
             <h4>색칠할 스케치를 업로드해주세요</h4>
             <Image imageSrc={imageSrc} setImageSrc={setImageSrc}/>
-            <Link to = {"/Pallet_complete"}>
+            <Link to = {"/Palette_complete"}>
                 <MyButton
+                    disabled={!(imageSrc.length > 0)}
                     text={"START"}
                 />
             </Link>            
